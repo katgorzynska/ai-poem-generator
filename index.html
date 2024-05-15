@@ -8,23 +8,38 @@
     <title>Gedichtengenie</title>
 </head>
 <body>
-    <header>
-        <h1>Gedichtengenie</h1>
+    <header class="m-5">
+        <h1 class="text-center">Gedichtengenie
+            <small class="text-body-secondary">AI gedichtengenerator</small>
+        </h1>
     </header>
     <main>
-<form>
-    <input type="text"
-    placeholder="Voer het onderwerp van het gedicht in..."
-    autofocus
-    required
-    autocomplete="off"
-    />
-    <input type="submit"/>
-</form>
-<div>The poem will go here</div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text"
+                                    placeholder="Voer het onderwerp van het gedicht in..."
+                                    autofocus
+                                    required
+                                    autocomplete="off"
+                                    class="form-control"
+                                />
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-dark">Verzenden</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>        
+<div class="text-center m-4">The poem will go here</div>
     </main>
-    <footer>
-        Dit AI-project is gecodeerd door <a href="https://katgorzynska.netlify.app/" target="_blank">Kat Górzyńska</a> en is <a href="https://github.com/katgorzynska/ai-poem-generator" target="_blank">open source.</a>
+    <footer class="text-center m-3">
+        Dit AI-project is gecodeerd door <a href="https://katgorzynska.netlify.app/" target="_blank">Kat Górzyńska</a> en is <a href="https://github.com/katgorzynska/ai-poem-generator" target="_blank">open-source.</a>
     </footer>
     <script src="src/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
